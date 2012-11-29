@@ -1,4 +1,4 @@
 narno.github.com
 ===========
 
-My Github [home page](narno.github.com) repository.
+My Github [home page](http://narno.github.com) repository.
