@@ -37,6 +37,7 @@
 
 })(jQuery, this);
 
+// Github/Narno
 (function($) {
   $(function() {
     $.getJSON("https://api.github.com/users/narno/repos?sort=update&callback=?", function(response) {
@@ -47,8 +48,12 @@
           $("div#github-repos dl").append(
             $("<dt>").append(
               $("<a>")
-                .html(repo.name)
                 .attr("href", repo["html_url"])
+                .attr("class", "link-github")
+                .append(
+                  $("<span>")
+                  .html(repo.name)
+                )
             )
           );
           $("div#github-repos dl").append(
@@ -62,6 +67,7 @@
     });
   });
 })(jQuery);
+// Github/Baobaz
 (function($) {
   $(function() {
     $.getJSON("https://api.github.com/orgs/baobaz/repos?sort=update&callback=?", function(response) {
