@@ -40,7 +40,7 @@
 // Github/Narno
 (function($) {
   $(function() {
-    $.getJSON("https://api.github.com/users/narno/repos?sort=update&callback=?", function(response) {
+    $.getJSON("https://api.github.com/users/narno/repos?sort=pushed&callback=?", function(response) {
       $("div#github-repos dl dt").remove();
       $("div#github-repos dl dd").remove();
       $.each(response.data, function(idx, repo) {
@@ -67,10 +67,10 @@
     });
   });
 })(jQuery);
-// Github/Baobaz
+// Github/ApertureLab
 (function($) {
   $(function() {
-    $.getJSON("https://api.github.com/orgs/baobaz/repos?sort=update&callback=?", function(response) {
+    $.getJSON("https://api.github.com/orgs/aperturelab/repos?sort=update&callback=?", function(response) {
       $("div#github-org-repos dl dt").remove();
       $("div#github-org-repos dl dd").remove();
       $.each(response.data, function(idx, repo) {
