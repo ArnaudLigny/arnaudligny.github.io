@@ -70,11 +70,11 @@
 // Github/ApertureLab
 (function($) {
   $(function() {
-    $.getJSON("https://api.github.com/orgs/aperturelab/repos?sort=update&callback=?", function(response) {
+    $.getJSON("https://api.github.com/orgs/aperturelab/repos?sort=pushed&callback=?", function(response) {
       $("div#github-org-repos dl dt").remove();
       $("div#github-org-repos dl dd").remove();
       $.each(response.data, function(idx, repo) {
-        if(!repo.fork) {
+        //if(!repo.fork) {
           $("div#github-org-repos dl").append(
             $("<dt>").append(
               $("<a>")
@@ -88,7 +88,7 @@
                 .html(repo.description)
             )
           );
-        }
+        //}
       });
     });
   });
