@@ -4,6 +4,10 @@
     background: url("../images/GitHub.png") left top no-repeat;
 }
 
-.link-github span {
+.link-fork {
+    background: url("../images/fork.png") left top no-repeat;
+}
+
+.link-github span, .link-fork span {
     padding-left: 20px;
 }
