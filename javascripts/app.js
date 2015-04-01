@@ -33,31 +33,28 @@
       $("div#github-repos dl dt").remove();
       $("div#github-repos dl dd").remove();
       $.each(response.data, function(idx, repo) {
-        //if(!repo.fork) {
-          $("div#github-repos dl").append(
-            $("<dt>").append(
-              $("<a>")
-                .attr("href", repo["html_url"])
-                .attr("class", function(i, val) {
-                  if(repo.fork) {
-                    return "link-fork";
-                  } else {
-                    return "link-github";
-                  }
-                })
-                .append(
-                  $("<span>")
-                  .html(repo.name)
-                )
-            )
-          );
-          $("div#github-repos dl").append(
-            $("<dd>").append(
-              $("<span>")
-                .html(repo.description)
-            )
-          );
-        //}
+        $("div#github-repos dl").append(
+          $("<dt>").append(
+            $("<a>")
+              .attr("href", repo["html_url"])
+              .attr("class", function(i, val) {
+                if(repo.fork) {
+                  return "link-fork";
+                } else {
+                  return "link-github";
+                }
+              })
+              .append(
+                $("<span>")
+                .html(repo.name)
+              )
+          )
+        ).append(
+          $("<dd>").append(
+            $("<span>")
+              .html(repo.description)
+          )
+        );
       });
     });
   });
@@ -85,8 +82,7 @@
                 .html(repo.name)
               )
           )
-        );
-        $("div#github-org-repos dl").append(
+        ).append(
           $("<dd>").append(
             $("<span>")
               .html(repo.description)
