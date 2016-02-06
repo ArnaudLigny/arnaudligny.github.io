@@ -1,5 +1,5 @@
 {
-    "require": {
-        "narno/phpoole-library": "1.0.X-dev"
-    }
+  "require": {
+    "narno/phpoole-library": "dev-develop as 1.1.X-dev"
+  }
 }
