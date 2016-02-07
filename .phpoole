@@ -1,0 +1,5 @@
+site:
+    title: narno.org
+    baseurl: http://narno.org
+frontmatter:
+    format: ini
