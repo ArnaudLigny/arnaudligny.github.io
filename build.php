@@ -9,6 +9,7 @@ use PHPoole\PHPoole;
 use Symfony\Component\Yaml\Yaml;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
+use GitWrapper\GitWrapper;
 
 $getopt = getopt('e::p::');
 
@@ -35,22 +36,19 @@ if (!$prod) {
 // publish?
     if (isset($getopt['p'])) {
         echo "Publishing...\n";
-        // @todo implement git push to the gh-pages branch
-        function run($command) {
-            exec($command.' 2>&1', $output, $returnValue);
-            $output = implode(PHP_EOL, $output);
-            return "$output\n";
-        }
-        $filesystem = new Filesystem();
+        //
         $branch = 'master';
         $tmpDirectory = tempnam(sys_get_temp_dir(), 'phpoole_publish_');
         //
+        $filesystem = new Filesystem();
         $filesystem->remove($tmpDirectory);
         $filesystem->mkdir($tmpDirectory);
         //
-        echo run("git clone git@github.com:Narno/narno.github.com.git $tmpDirectory");
-        //
-        echo run("cd \"$tmpDirectory\" && git checkout $branch");
+        $wrapper = new GitWrapper();
+        $git = $wrapper->clone('git@github.com:Narno/narno.github.com.git', $tmpDirectory);
+        $git->config('user.name', $options['github']['username'])
+            ->config('user.email', $options['github']['email']);
+        $git->checkout($branch);
         //
         $finder = new Finder();
         $finder->files()
@@ -58,9 +56,15 @@ if (!$prod) {
             ->ignoreVCS(true);
         $filesystem->remove($finder);
         $filesystem->mirror('_site', $tmpDirectory);
-        echo run("cd \"$tmpDirectory\" && git add --all . && git commit -m \"Website generated with PHPoole\"");
         //
-        echo run("cd \"$tmpDirectory\" && git push origin $branch");
+        if ($git->hasChanges()) {
+            $git->add('*')
+                ->commit('Website generated with PHPoole.')
+                ->push();
+            echo "Done!\n";
+        } else {
+            echo "Nothing to do!\n";
+        }
         //
         $filesystem->remove($tmpDirectory);
     }

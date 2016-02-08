@@ -18,9 +18,10 @@
     <div class="twelve columns">
       <h1>narno.org</h1>
       <p>Hello, I'm <a href="http://arnaudligny.fr">Arnaud Ligny</a> aka <a href="http://narno.com">Narno</a>. I'm a french Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.</p>
-      {% import "includes/github.html" as github %}
-      {{ github.widget('narno', 'github-repos', 'My open source projects', 'A few ones of the open source projects on which I works during my free time, hosted on GitHub.') }}
-      {{ github.widget('aperturelab', 'github-org-repos', 'ApertureLab projects', 'Open source projects of <a href="http://aperturelab.io">ApertureLab</a>.') }}
+{% import "includes/github.html" as github %}
+{% for widget in page.github.widgets %}
+{{ github.widget(widget.name, widget.id, widget.title, widget.description) }}
+{% endfor %}
     </div>
   </div>
   <footer class="row">

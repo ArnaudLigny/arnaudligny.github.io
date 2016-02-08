@@ -2,4 +2,7 @@ site:
     title: narno.org
     baseurl: http://narno.org
 frontmatter:
-    format: ini
+    format: yaml
+github:
+    username: Narno
+    email: arnaud@ligny.org
