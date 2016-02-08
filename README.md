@@ -1,9 +1,20 @@
-narno.github.com
-================
+# narno.org
 
-My Github [home page](http://narno.github.com) repository, built with PHPoole-library.
+Source of my [home page](http://narno.org), generated with [PHPoole-library](https://github.com/Narno/PHPoole-library).
 
+## install
 ```
+$ git clone https://github.com/Narno/narno.github.com
+$ git checkout source
 $ composer install
-$ php build.php -e=prod
+```
+
+## test locally
+```
+$ php build.php
+```
+
+## publish
+```
+$ php build.php -e=prod -p
 ```
