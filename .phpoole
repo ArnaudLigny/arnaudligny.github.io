@@ -6,3 +6,5 @@ frontmatter:
 github:
     username: Narno
     email: arnaud@ligny.org
+    repository: narno.github.com
+    branch: gh-pages
