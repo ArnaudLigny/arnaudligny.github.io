@@ -37,7 +37,7 @@ if (!$prod) {
     if (isset($getopt['p'])) {
         echo "Publishing...\n";
         //
-        $branch = 'master';
+        $branch = $options['github']['branch'];
         $tmpDirectory = tempnam(sys_get_temp_dir(), 'phpoole_publish_');
         //
         $filesystem = new Filesystem();
@@ -45,7 +45,7 @@ if (!$prod) {
         $filesystem->mkdir($tmpDirectory);
         //
         $wrapper = new GitWrapper();
-        $git = $wrapper->clone('git@github.com:Narno/narno.github.com.git', $tmpDirectory);
+        $git = $wrapper->clone("git@github.com:{$options['github']['username']}/{$options['github']['repository']}.git", $tmpDirectory);
         $git->config('user.name', $options['github']['username'])
             ->config('user.email', $options['github']['email']);
         $git->checkout($branch);
