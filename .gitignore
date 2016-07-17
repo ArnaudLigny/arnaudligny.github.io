@@ -1,3 +1,2 @@
-vendor
-_cache
-_site
+vendor/
+_site/
