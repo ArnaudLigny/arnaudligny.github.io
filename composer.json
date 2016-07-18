@@ -1,9 +1,6 @@
 {
   "require": {
     "narno/phpoole-library": "1.1.x-dev",
-    "symfony/yaml": "^2.8",
-    "symfony/filesystem": "^2.8",
-    "symfony/finder": "^2.8",
-    "cpliakas/git-wrapper": "^1.6"
+    "symfony/yaml": "^2.8"
   }
 }
