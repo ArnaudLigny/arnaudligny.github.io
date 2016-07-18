@@ -1,20 +1,18 @@
-# narno.org
+Source code of http://narno.org, generated with [PHPoole-library](https://github.com/Narno/PHPoole-library).
 
-Source of my [home page](http://narno.org), generated with [PHPoole-library](https://github.com/Narno/PHPoole-library).
+The website is automatically built and deployed through [Travis CI](https://travis-ci.org/Narno/arnaudligny.fr/).
 
-## install
+[![Build Status](https://travis-ci.org/Narno/narno.github.com.svg?branch=source)](https://travis-ci.org/Narno/narno.github.com)
+
+## Install, build & deploy
 ```
-$ git clone https://github.com/Narno/narno.github.com
-$ git checkout source
 $ composer install
+$ php build.php -e=prod
+$ export GH_TOKEN=your_github_token
+$ sh deploy.sh
 ```
 
-## test locally
+## Test locally
 ```
-$ php build.php
-```
-
-## publish
-```
-$ php build.php -e=prod -p
+$ php build.php -e=dev
 ```
