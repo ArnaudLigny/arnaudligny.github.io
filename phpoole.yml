@@ -1,6 +1,6 @@
 site:
     title: narno.org
-    baseurl: http://narno.org
+    baseurl: http://narno.org/
 frontmatter:
     format: yaml
 github:
