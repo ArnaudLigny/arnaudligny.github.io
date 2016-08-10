@@ -1,5 +1,5 @@
 ---
-layout: index
+layout: index.html
 github:
     widgets:
         - name: narno

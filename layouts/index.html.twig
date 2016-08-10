@@ -7,18 +7,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>{{ site.title }}</title>
-  <link rel="shortcut icon" href="{{ url() }}images/favicon.ico" type="image/x-icon" />
-  <link rel="icon" type="image/png" href="{{ url() }}images/favicon.png" />
-  <link rel="stylesheet" href="{{ url() }}stylesheets/foundation.min.css">
-  <link rel="stylesheet" href="{{ url() }}stylesheets/app.css">
-  <script src="{{ url() }}javascripts/modernizr.foundation.js"></script>
+  <link rel="shortcut icon" href="{{ url('images/favicon.ico') }}" type="image/x-icon" />
+  <link rel="icon" type="image/png" href="{{ url('images/favicon.png') }}" />
+  <link rel="stylesheet" href="{{ url(minify('stylesheets/foundation.min.css')) }}">
+  <link rel="stylesheet" href="{{ url(minify('stylesheets/app.css')) }}">
+  <script src="{{ url('javascripts/modernizr.foundation.js') }}"></script>
 </head>
 <body>
   <div class="row">
     <div class="twelve columns">
       <h1>narno.org</h1>
       <p>Hello, I'm <a href="http://arnaudligny.fr">Arnaud Ligny</a> aka <a href="http://narno.com">Narno</a>. I'm a french Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.</p>
-{% import "includes/github.html" as github %}
+{% import 'includes/github.html.twig' as github %}
 {% for widget in page.github.widgets %}
 {{ github.widget(widget.name, widget.id, widget.title, widget.description) }}
 {% endfor %}
@@ -39,9 +39,9 @@
       </div>
     </div>
   </footer>
-  <script src="{{ url() }}javascripts/jquery.js"></script>
-  <script src="{{ url() }}javascripts/foundation.min.js"></script>
-  <script src="{{ url() }}javascripts/app.js"></script>
+  <script src="{{ url('javascripts/jquery.js') }}"></script>
+  <script src="{{ url('javascripts/foundation.min.js') }}"></script>
+  <script src="{{ url('javascripts/app.js') }}"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-387892-18']);
