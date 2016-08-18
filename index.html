@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="http://narno.org/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="http://narno.org/stylesheets/app.css">
   <script src="http://narno.org/javascripts/modernizr.foundation.js"></script>
+  <script src="http://narno.org/javascripts/jquery.js"></script>
 </head>
 <body>
   <div class="row">
@@ -25,7 +26,7 @@
       <h5 class="subheader">A few ones of the open source projects on which I works during my free time, hosted on GitHub.</h5>
       <hr>
     </div>
-    <div id="github-repos" class="twelve mobile-twelve columns">
+    <div id="github-narno" class="twelve mobile-twelve columns">
       <dl>
         <dt>Loading</dt>
         <dd>...</dd>
@@ -33,6 +34,40 @@
     </div>
   </div>
 </div>
+<script>
+  (function($) {
+    $(function() {
+      $.getJSON("https://api.github.com/users/narno/repos?sort=pushed&callback=?", function(response) {
+        $("div#github-narno dl dt").remove();
+        $("div#github-narno dl dd").remove();
+        $.each(response.data, function(idx, repo) {
+          $("div#github-narno dl").append(
+            $("<dt>").append(
+              $("<a>")
+              .attr("href", repo["html_url"])
+              .attr("class", function(i, val) {
+                if(repo.fork) {
+                  return "link-fork";
+                } else {
+                  return "link-github";
+                }
+              })
+              .append(
+                $("<span>")
+                .html(repo.name)
+              )
+            )
+          ).append(
+            $("<dd>").append(
+              $("<span>")
+              .html(repo.description)
+            )
+          );
+        });
+      });
+    });
+  })(jQuery);
+</script>
 
 <div class="panel radius" id="panel-aperturelab">
   <div class="row">
@@ -41,7 +76,7 @@
       <h5 class="subheader">Open source projects of <a href="http://aperturelab.io">ApertureLab</a>.</h5>
       <hr>
     </div>
-    <div id="github-org-repos" class="twelve mobile-twelve columns">
+    <div id="github-aperturelab" class="twelve mobile-twelve columns">
       <dl>
         <dt>Loading</dt>
         <dd>...</dd>
@@ -49,6 +84,90 @@
     </div>
   </div>
 </div>
+<script>
+  (function($) {
+    $(function() {
+      $.getJSON("https://api.github.com/orgs/aperturelab/repos?sort=pushed&callback=?", function(response) {
+        $("div#github-aperturelab dl dt").remove();
+        $("div#github-aperturelab dl dd").remove();
+        $.each(response.data, function(idx, repo) {
+          $("div#github-aperturelab dl").append(
+            $("<dt>").append(
+              $("<a>")
+              .attr("href", repo["html_url"])
+              .attr("class", function(i, val) {
+                if(repo.fork) {
+                  return "link-fork";
+                } else {
+                  return "link-github";
+                }
+              })
+              .append(
+                $("<span>")
+                .html(repo.name)
+              )
+            )
+          ).append(
+            $("<dd>").append(
+              $("<span>")
+              .html(repo.description)
+            )
+          );
+        });
+      });
+    });
+  })(jQuery);
+</script>
+
+<div class="panel radius" id="panel-phpoole">
+  <div class="row">
+    <div class="twelve mobile-twelve columns">
+      <h4>PHPoole project</h4>
+      <h5 class="subheader">My static website generator</h5>
+      <hr>
+    </div>
+    <div id="github-phpoole" class="twelve mobile-twelve columns">
+      <dl>
+        <dt>Loading</dt>
+        <dd>...</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<script>
+  (function($) {
+    $(function() {
+      $.getJSON("https://api.github.com/orgs/phpoole/repos?sort=pushed&callback=?", function(response) {
+        $("div#github-phpoole dl dt").remove();
+        $("div#github-phpoole dl dd").remove();
+        $.each(response.data, function(idx, repo) {
+          $("div#github-phpoole dl").append(
+            $("<dt>").append(
+              $("<a>")
+              .attr("href", repo["html_url"])
+              .attr("class", function(i, val) {
+                if(repo.fork) {
+                  return "link-fork";
+                } else {
+                  return "link-github";
+                }
+              })
+              .append(
+                $("<span>")
+                .html(repo.name)
+              )
+            )
+          ).append(
+            $("<dd>").append(
+              $("<span>")
+              .html(repo.description)
+            )
+          );
+        });
+      });
+    });
+  })(jQuery);
+</script>
 
     </div>
   </div>
@@ -61,13 +180,12 @@
         </div>
         <div class="six columns">
           <ul class="link-list right">
-            <li><span>Powered by <a href="http://phpoole.org/#v1.1.0-rc.4">PHPoole-library v1.1.0-rc.4</a></span></li>
+            <li><span>Powered by <a href="http://phpoole.org/#v1.1.0-rc.4">PHPoole</a></span></li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
-  <script src="http://narno.org/javascripts/jquery.js"></script>
   <script src="http://narno.org/javascripts/foundation.min.js"></script>
   <script src="http://narno.org/javascripts/app.js"></script>
   <script type="text/javascript">
