@@ -1,10 +1,23 @@
 site:
-    title: narno.org
-    baseurl: http://narno.org/
-frontmatter:
-    format: yaml
-github:
-    username: Narno
-    email: arnaud@ligny.org
-    repository: narno.github.com
-    branch: master
+  title: narno.org
+  baseurl: http://narno.org/
+  baseline: I'm a french Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.
+  author:
+    name: Arnaud Ligny
+    url: http://arnaudligny.fr
+  projects:
+    - name: narno
+      type: users
+      id: github-narno
+      title: My open source projects
+      description: A few ones of the open source projects on which I works during my free time, hosted on GitHub.
+    - name: aperturelab
+      type: orgs
+      id: github-aperturelab
+      title: ApertureLab projects
+      description: Open source projects of <a href="http://aperturelab.io">ApertureLab</a>.
+    - name: phpoole
+      type: orgs
+      id: github-phpoole
+      title: PHPoole project
+      description: My static website generator

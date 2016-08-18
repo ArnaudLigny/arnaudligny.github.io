@@ -1,4 +1,4 @@
-{% macro widget(name, id, title, description) %}
+{% macro widget(type, name, id, title, description) %}
 <div class="panel radius" id="panel-{{ name }}">
   <div class="row">
     <div class="twelve mobile-twelve columns">
@@ -14,4 +14,38 @@
     </div>
   </div>
 </div>
+<script>
+  (function($) {
+    $(function() {
+      $.getJSON("https://api.github.com/{{ type }}/{{ name }}/repos?sort=pushed&callback=?", function(response) {
+        $("div#{{ id }} dl dt").remove();
+        $("div#{{ id }} dl dd").remove();
+        $.each(response.data, function(idx, repo) {
+          $("div#{{ id }} dl").append(
+            $("<dt>").append(
+              $("<a>")
+              .attr("href", repo["html_url"])
+              .attr("class", function(i, val) {
+                if(repo.fork) {
+                  return "link-fork";
+                } else {
+                  return "link-github";
+                }
+              })
+              .append(
+                $("<span>")
+                .html(repo.name)
+              )
+            )
+          ).append(
+            $("<dd>").append(
+              $("<span>")
+              .html(repo.description)
+            )
+          );
+        });
+      });
+    });
+  })(jQuery);
+</script>
 {% endmacro %}
