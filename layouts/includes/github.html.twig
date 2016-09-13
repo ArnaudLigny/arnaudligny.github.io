@@ -15,6 +15,7 @@
   </div>
 </div>
 <script>
+{% filter minifyJS %}
   (function($) {
     $(function() {
       $.getJSON("https://api.github.com/{{ type }}/{{ name }}/repos?sort=pushed&callback=?", function(response) {
@@ -47,5 +48,6 @@
       });
     });
   })(jQuery);
+{% endfilter %}
 </script>
 {% endmacro %}

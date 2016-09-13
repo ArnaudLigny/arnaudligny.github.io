@@ -11,8 +11,8 @@
   <link rel="icon" type="image/png" href="{{ url('images/favicon.png') }}" />
   <link rel="stylesheet" href="{{ url(minify('stylesheets/foundation.min.css')) }}">
   <link rel="stylesheet" href="{{ url(minify('stylesheets/app.css')) }}">
-  <script src="{{ url('javascripts/modernizr.foundation.js') }}"></script>
-  <script src="{{ url('javascripts/jquery.js') }}"></script>
+  <script src="{{ url(minify('javascripts/modernizr.foundation.js')) }}"></script>
+  <script src="{{ url(minify('javascripts/jquery.js')) }}"></script>
 </head>
 <body>
   <div class="row">
@@ -40,9 +40,10 @@
       </div>
     </div>
   </footer>
-  <script src="{{ url('javascripts/foundation.min.js') }}"></script>
-  <script src="{{ url('javascripts/app.js') }}"></script>
+  <script src="{{ url(minify('javascripts/foundation.min.js')) }}"></script>
+  <script src="{{ url(minify('javascripts/app.js')) }}"></script>
   <script type="text/javascript">
+{% filter minifyJS %}
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-387892-18']);
     _gaq.push(['_trackPageview']);
@@ -51,6 +52,7 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+{% endfilter %}
   </script>
 </body>
 </html>
