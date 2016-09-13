@@ -1,5 +1,6 @@
 ---
 title: Config PC
+alias: config
 ---
 - Boîtier : [Cooler Master CM-690 II](http://www.coolermaster.com/case/mid-tower/cm-690-ii-ver-2/)
 - Alimentation : [Corsair TX V2 650 Watts](http://www.materiel.net/alimentation-pour-pc/corsair-tx-v2-650w-64329.html)
