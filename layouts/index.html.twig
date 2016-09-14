@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.name %} {{ page.title }} | {% endif %} {{ site.title }}</title>
-  <link rel="shortcut icon" href="{{ url('images/favicon.ico') }}" type="image/x-icon" />
-  <link rel="icon" type="image/png" href="{{ url('images/favicon.png') }}" />
-  <link rel="stylesheet" href="{{ url(minify('stylesheets/foundation.min.css')) }}">
-  <link rel="stylesheet" href="{{ url(minify('stylesheets/app.css')) }}">
-  <script src="{{ url(minify('javascripts/modernizr.foundation.js')) }}"></script>
-  <script src="{{ url(minify('javascripts/jquery.js')) }}"></script>
+  <link rel="shortcut icon" href="{{ url('images/favicon.ico') }}" type="image/x-icon">
+  <link rel="icon" type="image/png" href="{{ url('images/favicon.png') }}">
+  <link rel="stylesheet" href="{{ url('css/foundation.min.css') }}">
+  <link rel="stylesheet" href="{{ url(minify('css/app.css')) }}">
+  <script src="{{ url(minify('js/vendor/jquery.js')) }}"></script>
 </head>
 <body>
   <div class="row">
-    <div class="twelve columns">
+    <div class="small-6 large-centered columns">
       <h1>{% if page.name %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</h1>
 {% block content %}
       <p>Hello, I'm <a href="{{ site.author.url }}">{{ site.author.name }}</a> aka <a href="http://narno.com">Narno</a>. {{ site.baseline }}</p>
@@ -27,26 +24,19 @@
 {% endblock content %}
     </div>
   </div>
-
-  <footer class="row">
-    <div class="twelve columns">
-      <hr />
-      <div class="row">
+  <div class="row">
+    <div class="small-6 large-centered columns">
 {% block footer %}
-        <div class="six columns">
-          <p>&copy; Copyright {{ "now"|date('Y') }} <a href="{{ site.author.url }}">{{ site.author.name }}</a></p>
-        </div>
-        <div class="six columns">
-          <ul class="link-list right">
-            <li><span>Powered by <a href="{{ phpoole.url }}">PHPoole</a></span></li>
-          </ul>
-        </div>
+      <ul class="menu simple">
+        <li><span>&copy; Copyright {{ "now"|date('Y') }} <a href="{{ site.author.url }}">{{ site.author.name }}</a></span></li>
+        <li class="float-right"><span>Powered by <a href="{{ phpoole.url }}">PHPoole</a></span></li>
+      </ul>
 {% endblock footer %}
-      </div>
     </div>
-  </footer>
-  <script src="{{ url(minify('javascripts/foundation.min.js')) }}"></script>
-  <script src="{{ url(minify('javascripts/app.js')) }}"></script>
+  </div>
+  <script src="{{ url(minify('js/vendor/what-input.js')) }}"></script>
+  <script src="{{ url('js/vendor/foundation.min.js') }}"></script>
+  <script src="{{ url(minify('js/app.js')) }}"></script>
   <script type="text/javascript">
 {% filter minifyJS %}
     var _gaq = _gaq || [];

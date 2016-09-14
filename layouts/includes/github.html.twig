@@ -1,24 +1,22 @@
 {% macro widget(type, name, id, title, description) %}
-<div class="panel radius" id="panel-{{ name }}">
-  <div class="row">
-    <div class="twelve mobile-twelve columns">
-      <h4>{{ title }}</h4>
-      <h5 class="subheader">{{ description }}</h5>
-      <hr>
-    </div>
-    <div id="{{ id }}" class="twelve mobile-twelve columns">
-      <dl>
-        <dt>Loading</dt>
-        <dd>...</dd>
-      </dl>
-    </div>
-  </div>
+<div id="{{ id }}">
+  <h4>{{ title }}</h4>
+  <h5 class="subheader">{{ description }}</h5>
+  <dl>
+    <dt>Loading</dt>
+    <dd>...</dd>
+  </dl>
+  <hr>
 </div>
 <script>
 {% filter minifyJS %}
   (function($) {
     $(function() {
-      $.getJSON("https://api.github.com/{{ type }}/{{ name }}/repos?sort=pushed&callback=?", function(response) {
+      $.getJSON("https://api.github.com/{{ type }}/{{ name }}/repos?sort=pushed&callback=?", function(response, status) {
+        if (status != 'success' || response.meta.status != 200) {
+          $("div#{{ id }}").html("Oh no, I can't fetch the GitHub API!");
+          return;
+        }
         $("div#{{ id }} dl dt").remove();
         $("div#{{ id }} dl dd").remove();
         $.each(response.data, function(idx, repo) {
