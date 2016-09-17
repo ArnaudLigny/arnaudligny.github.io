@@ -1,12 +1,13 @@
 {% macro widget(type, name, id, title, description) %}
-<div id="{{ id }}">
-  <h4>{{ title }}</h4>
-  <h5 class="subheader">{{ description }}</h5>
-  <dl>
-    <dt>Loading</dt>
-    <dd>...</dd>
-  </dl>
-  <hr>
+<div class="panel panel-default" id="{{ id }}">
+  <div class="panel-heading">{{ title }}</div>
+  <div class="panel-body">
+    <p>{{ description }}</p>
+    <dl>
+      <dt>Loading</dt>
+      <dd>...</dd>
+    </dl>
+  </div>
 </div>
 <script>
 {% filter minifyJS %}
@@ -20,7 +21,7 @@
         $("div#{{ id }} dl dt").remove();
         $("div#{{ id }} dl dd").remove();
         $.each(response.data, function(idx, repo) {
-          $("div#{{ id }} dl").append(
+          $("div#{{ id }} dl").attr("class", "dl-horizontal").append(
             $("<dt>").append(
               $("<a>")
               .attr("href", repo["html_url"])
