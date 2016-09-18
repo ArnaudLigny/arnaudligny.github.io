@@ -42,7 +42,11 @@
       <!-- footer -->
       <footer class="footer">
 {% block footer %}
-        <p>&copy; Copyright {{ "now"|date('Y') }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>, Powered by <a href="{{ phpoole.url }}">PHPoole</a></p>
+        <p>
+          &copy; Copyright {{ "now"|date('Y') }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>, 
+          Powered by <a href="{{ phpoole.url }}">PHPoole</a>
+          {% if not page.isVirtual %} (<a href="https://github.com/Narno/narno.github.com/tree/source/content">view source</a>){% endif %}
+        </p>
 {% endblock footer %}
       </footer>
     </div> <!-- /container -->
