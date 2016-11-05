@@ -9,8 +9,8 @@ menu:
 - Alimentation : [Corsair TX V2 650 Watts](http://www.materiel.net/alimentation-pour-pc/corsair-tx-v2-650w-64329.html)
 - Carte Mère : [Asus P8P67 LE Rev 3.0](https://www.asus.com/Motherboards/P8P67_LE/)
 - Processeur : [Intel Core i5 2500K](http://ark.intel.com/products/52209/Intel-Core-i5-2500-Processor-6M-Cache-up-to-3_70-GHz)
-- Carte Graphique : [Sapphire Radeon HD 6950 1Go](http://www.tomshardware.com/reviews/radeon-hd-6950-1gb-benchmark,3041-5.html)
-- Memory : G.Skill DDR3 8 Go
+- Carte Graphique : [Gainward GeForce GTX 1060 Phoenix GS 6 Go](http://www.gainward.com/main/vgapro.php?id=988)
+- Memory : G.Skill Ripjaws X DDR3 16 Go
 - SSD : Crucial BX100 500 Go
 - HDD : WD Caviar Black S-ATA 3 1 To
 - Écran : iiyama 22"
