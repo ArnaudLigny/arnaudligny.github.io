@@ -9,6 +9,7 @@ menu:
 - Alimentation : [Corsair TX V2 650 Watts](http://www.materiel.net/alimentation-pour-pc/corsair-tx-v2-650w-64329.html)
 - Carte Mère : [Asus P8P67 LE Rev 3.0](https://www.asus.com/Motherboards/P8P67_LE/)
 - Processeur : [Intel Core i5 2500K](http://ark.intel.com/products/52209/Intel-Core-i5-2500-Processor-6M-Cache-up-to-3_70-GHz)
+- Ventirad : [Cooler Master Hyper 212 Plus](http://www.coolermaster.com/cooling/cpu-air-cooler/hyper-212-plus/)
 - Carte Graphique : [Gainward GeForce GTX 1060 Phoenix GS 6 Go](http://www.gainward.com/main/vgapro.php?id=988)
 - Memory : [G.Skill Ripjaws X DDR3 16 Go](http://www.gskill.com/en/product/f3-12800cl9d-8gbxl)
 - SSD : [Crucial BX100 500 Go](http://www.crucial.fr/fra/fr/macbook-pro-(13-pouces,-d%C3%A9but-2011)/CT6512438)
