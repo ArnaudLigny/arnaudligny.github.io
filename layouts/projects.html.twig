@@ -1,0 +1,11 @@
+{% extends 'index.html.twig' %}
+
+{% block header %}
+{% endblock header %}
+{% block content %}
+{{ page.content }}
+{% import 'includes/github.html.twig' as github %}
+{% for project in site.projects %}
+{{ github.widget(project.type, project.name, project.id, project.title, project.description) }}
+{% endfor %}
+{% endblock content %}

@@ -31,25 +31,23 @@
         </nav>
         <h3 class="text-muted">{% if page.name %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</h3>
       </div>
+      <!-- header -->
+{% block header %}
+      <p class="lead">Hello, I'm <a href="{{ site.author.url }}">{{ site.author.name }}</a> aka <a href="http://narno.com">Narno</a>. {{ site.baseline }}</p>
+{% endblock header %}
       <!-- content -->
 {% block content %}
-      <p class="lead">Hello, I'm <a href="{{ site.author.url }}">{{ site.author.name }}</a> aka <a href="http://narno.com">Narno</a>. {{ site.baseline }}</p>
-{% import 'includes/github.html.twig' as github %}
-{% for project in site.projects %}
-{{ github.widget(project.type, project.name, project.id, project.title, project.description) }}
-{% endfor %}
 {% endblock content %}
-      <!-- footer -->
       <footer class="footer">
 {% block footer %}
         <p>
-          &copy; Copyright {{ "now"|date('Y') }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>, 
-          Powered by <a href="{{ phpoole.url }}">PHPoole</a>
-          {% if not page.isVirtual %} (<a href="https://github.com/Narno/narno.github.com/tree/source/content">view source</a>){% endif %}
+          &copy; Copyright {{ "now"|date('Y') }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>
+           | Powered by <a href="{{ phpoole.url }}">PHPoole</a>
+          {% if not page.isVirtual %} | See <a href="https://github.com/Narno/narno.github.com/tree/source/content">page source</a>{% endif %}
         </p>
 {% endblock footer %}
       </footer>
-    </div> <!-- /container -->
+    </div><!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="{{ url('js/bootstrap.min.js') }}"></script>
     <script src="{{ url(minify('js/ie10-viewport-bug-workaround.js')) }}"></script>
