@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="I'm a french Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.">
+    <meta name="description" content="I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.">
     <meta name="author" content="Arnaud Ligny">
     <link rel="shortcut icon" href="http://narno.org/images/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" href="http://narno.org/images/favicon.png">
@@ -25,63 +25,22 @@
         <nav>
           <ul class="nav nav-pills pull-right">
                           <li role="presentation" class="active"><a href="http://narno.org/">Home</a></li>
+                          <li role="presentation"><a href="http://narno.org/projects">Projects</a></li>
                           <li role="presentation"><a href="http://narno.org/configpc">Config PC</a></li>
                       </ul>
         </nav>
         <h3 class="text-muted"> narno.org </h3>
       </div>
+      <!-- header -->
+      <p class="lead">Hello, I'm <a href="http://arnaudligny.fr">Arnaud Ligny</a> aka <a href="http://narno.com">Narno</a>. I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.</p>
       <!-- content -->
-      <p class="lead">Hello, I'm <a href="http://arnaudligny.fr">Arnaud Ligny</a> aka <a href="http://narno.com">Narno</a>. I'm a french Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.</p>
-<div class="panel panel-default" id="github-narno">
-  <div class="panel-heading">My open source projects</div>
-  <div class="panel-body">
-    <p>A few ones of the open source projects on which I works during my free time, hosted on GitHub.</p>
-    <dl>
-      <dt>Loading</dt>
-      <dd>...</dd>
-    </dl>
-  </div>
-</div>
-<script>
-(function($){$(function(){$.getJSON("https://api.github.com/users/narno/repos?sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){$("div#github-narno").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-narno dl dt").remove();$("div#github-narno dl dd").remove();$.each(response.data,function(idx,repo){$("div#github-narno dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return "link-fork"}else{return "link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))})})})})(jQuery)</script>
-
-<div class="panel panel-default" id="github-aperturelab">
-  <div class="panel-heading">ApertureLab projects</div>
-  <div class="panel-body">
-    <p>Open source projects of <a href="http://aperturelab.io">ApertureLab</a>.</p>
-    <dl>
-      <dt>Loading</dt>
-      <dd>...</dd>
-    </dl>
-  </div>
-</div>
-<script>
-(function($){$(function(){$.getJSON("https://api.github.com/orgs/aperturelab/repos?sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){$("div#github-aperturelab").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-aperturelab dl dt").remove();$("div#github-aperturelab dl dd").remove();$.each(response.data,function(idx,repo){$("div#github-aperturelab dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return "link-fork"}else{return "link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))})})})})(jQuery)</script>
-
-<div class="panel panel-default" id="github-phpoole">
-  <div class="panel-heading">PHPoole project</div>
-  <div class="panel-body">
-    <p>My static website generator</p>
-    <dl>
-      <dt>Loading</dt>
-      <dd>...</dd>
-    </dl>
-  </div>
-</div>
-<script>
-(function($){$(function(){$.getJSON("https://api.github.com/orgs/phpoole/repos?sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){$("div#github-phpoole").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-phpoole dl dt").remove();$("div#github-phpoole dl dd").remove();$.each(response.data,function(idx,repo){$("div#github-phpoole dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return "link-fork"}else{return "link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))})})})})(jQuery)</script>
-
-      <!-- footer -->
       <footer class="footer">
         <p>
-          &copy; Copyright 2016 <a href="http://arnaudligny.fr">Arnaud Ligny</a>, 
-          Powered by <a href="http://phpoole.org/#v1.3.0">PHPoole</a>
+          &copy; Copyright 2016 <a href="http://arnaudligny.fr">Arnaud Ligny</a>
+           | Powered by <a href="http://phpoole.org/#v1.3.0">PHPoole</a>
                   </p>
       </footer>
-    </div> <!-- /container -->
+    </div><!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://narno.org/js/bootstrap.min.js"></script>
     <script src="http://narno.org/js/ie10-viewport-bug-workaround.js"></script>
