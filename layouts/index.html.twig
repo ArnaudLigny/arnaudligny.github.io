@@ -20,8 +20,8 @@
   </head>
   <body>
     <div class="container">
-      <!-- head -->
       <div class="header clearfix">
+        <h1 class="text-muted">{% if page.name %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</h1>
         <nav>
           <ul class="nav nav-pills pull-right">
             {% for item in site.menus.main|sortByWeight %}
@@ -29,9 +29,7 @@
             {% endfor %}
           </ul>
         </nav>
-        <h3 class="text-muted">{% if page.name %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</h3>
-      </div>
-      <!-- header -->
+      </div><!-- header -->
 {% block header %}
       <p class="lead">Hello, I'm <a href="{{ site.author.url }}">{{ site.author.name }}</a> aka <a href="http://narno.com">Narno</a>. {{ site.baseline }}</p>
 {% endblock header %}
