@@ -1,5 +1,12 @@
 {% extends 'index.html.twig' %}
 
+{% block header %}
+{% endblock header %}
 {% block content %}
 {{ page.content }}
+<script>
+  $(document).ready(function () {
+    $("table").addClass("table table-striped table-condensed");
+  });
+</script>
 {% endblock content %}
