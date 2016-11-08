@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "392c1d7df9ca39023f38b57c58e278ac",
+    "hash": "a0742d483ee6d23b2e6d742d7a5028b5",
     "content-hash": "5a0e2eb37b34789b0b8e0bcc39d714fb",
     "packages": [
         {
@@ -210,16 +210,16 @@
         },
         {
             "name": "matthiasmullie/minify",
-            "version": "1.3.36",
+            "version": "1.3.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matthiasmullie/minify.git",
-                "reference": "52139dad41dc15f6e3556236bd326a98cdc269d6"
+                "reference": "1a6cb6b457690034bde461593edb510949bdd6e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/52139dad41dc15f6e3556236bd326a98cdc269d6",
-                "reference": "52139dad41dc15f6e3556236bd326a98cdc269d6",
+                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/1a6cb6b457690034bde461593edb510949bdd6e7",
+                "reference": "1a6cb6b457690034bde461593edb510949bdd6e7",
                 "shasum": ""
             },
             "require": {
@@ -262,7 +262,7 @@
                 "minifier",
                 "minify"
             ],
-            "time": "2016-09-14 11:31:25"
+            "time": "2016-10-27 22:32:49"
         },
         {
             "name": "matthiasmullie/path-converter",
@@ -315,16 +315,16 @@
         },
         {
             "name": "myclabs/php-enum",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/php-enum.git",
-                "reference": "e83e992a5b5a0858ef7adbc9239a749d71fb6979"
+                "reference": "e42fa9d2ae5dd660dbd0fb573d94c61e5a0dbb02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/e83e992a5b5a0858ef7adbc9239a749d71fb6979",
-                "reference": "e83e992a5b5a0858ef7adbc9239a749d71fb6979",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/e42fa9d2ae5dd660dbd0fb573d94c61e5a0dbb02",
+                "reference": "e42fa9d2ae5dd660dbd0fb573d94c61e5a0dbb02",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
             "keywords": [
                 "enum"
             ],
-            "time": "2016-08-01 15:48:47"
+            "time": "2016-10-09 21:43:05"
         },
         {
             "name": "narno/phpoole-library",
@@ -363,12 +363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPoole/PHPoole-library.git",
-                "reference": "ef2217bac175fa2ad8d500df48b5c9fb83021b34"
+                "reference": "498a9630e78d8e99c1fa9f869204ccf7945f04b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPoole/PHPoole-library/zipball/ef2217bac175fa2ad8d500df48b5c9fb83021b34",
-                "reference": "ef2217bac175fa2ad8d500df48b5c9fb83021b34",
+                "url": "https://api.github.com/repos/PHPoole/PHPoole-library/zipball/498a9630e78d8e99c1fa9f869204ccf7945f04b4",
+                "reference": "498a9630e78d8e99c1fa9f869204ccf7945f04b4",
                 "shasum": ""
             },
             "require": {
@@ -421,20 +421,20 @@
                 "twig",
                 "website"
             ],
-            "time": "2016-09-04 00:37:10"
+            "time": "2016-10-14 10:15:41"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.8.11",
+            "version": "v2.8.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "44b499521defddf2eae17a18c811bbdae4f98bdf"
+                "reference": "a3784111af9f95f102b6411548376e1ae7c93898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/44b499521defddf2eae17a18c811bbdae4f98bdf",
-                "reference": "44b499521defddf2eae17a18c811bbdae4f98bdf",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/a3784111af9f95f102b6411548376e1ae7c93898",
+                "reference": "a3784111af9f95f102b6411548376e1ae7c93898",
                 "shasum": ""
             },
             "require": {
@@ -470,20 +470,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 10:55:00"
+            "time": "2016-10-18 04:28:30"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.8.11",
+            "version": "v2.8.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "bec5533e6ed650547d6ec8de4b541dc9929066f7"
+                "reference": "bc24c8f5674c6f6841f2856b70e5d60784be5691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/bec5533e6ed650547d6ec8de4b541dc9929066f7",
-                "reference": "bec5533e6ed650547d6ec8de4b541dc9929066f7",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/bc24c8f5674c6f6841f2856b70e5d60784be5691",
+                "reference": "bc24c8f5674c6f6841f2856b70e5d60784be5691",
                 "shasum": ""
             },
             "require": {
@@ -519,20 +519,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2016-08-26 11:57:43"
+            "time": "2016-09-28 00:10:16"
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.11",
+            "version": "v2.8.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "05a03ed27073638658cab9405d99a67dd1014987"
+                "reference": "024de37f8a6b9e5e8244d9eb3fcf3e467dd2a93f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/05a03ed27073638658cab9405d99a67dd1014987",
-                "reference": "05a03ed27073638658cab9405d99a67dd1014987",
+                "url": "https://api.github.com/repos/symfony/process/zipball/024de37f8a6b9e5e8244d9eb3fcf3e467dd2a93f",
+                "reference": "024de37f8a6b9e5e8244d9eb3fcf3e467dd2a93f",
                 "shasum": ""
             },
             "require": {
@@ -568,20 +568,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 10:55:00"
+            "time": "2016-09-29 14:03:54"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.11",
+            "version": "v2.8.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "e7540734bad981fe59f8ef14b6fc194ae9df8d9c"
+                "reference": "396784cd06b91f3db576f248f2402d547a077787"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/e7540734bad981fe59f8ef14b6fc194ae9df8d9c",
-                "reference": "e7540734bad981fe59f8ef14b6fc194ae9df8d9c",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/396784cd06b91f3db576f248f2402d547a077787",
+                "reference": "396784cd06b91f3db576f248f2402d547a077787",
                 "shasum": ""
             },
             "require": {
@@ -617,20 +617,20 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-02 01:57:56"
+            "time": "2016-10-21 20:59:10"
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.2",
+            "version": "v1.27.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7"
+                "reference": "3c6c0033fd3b5679c6e1cb60f4f9766c2b424d97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
-                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3c6c0033fd3b5679c6e1cb60f4f9766c2b424d97",
+                "reference": "3c6c0033fd3b5679c6e1cb60f4f9766c2b424d97",
                 "shasum": ""
             },
             "require": {
@@ -643,7 +643,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.24-dev"
+                    "dev-master": "1.27-dev"
                 }
             },
             "autoload": {
@@ -678,7 +678,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-09-01 17:50:53"
+            "time": "2016-10-25 19:17:17"
         }
     ],
     "packages-dev": [],
