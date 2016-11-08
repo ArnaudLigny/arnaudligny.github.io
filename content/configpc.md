@@ -17,7 +17,7 @@ La config de mon PC de jeu.
 | Processeur      | [Intel Core i5 2500K](http://ark.intel.com/products/52209/Intel-Core-i5-2500-Processor-6M-Cache-up-to-3_70-GHz) |
 | Ventirad        | [Cooler Master Hyper 212 Plus](http://www.coolermaster.com/cooling/cpu-air-cooler/hyper-212-plus/) |
 | Carte Graphique | [Gainward GeForce GTX 1060 Phoenix GS 6 Go](http://www.gainward.com/main/vgapro.php?id=988) |
-| Memory          | [G.Skill Ripjaws X DDR3 16 Go](http://www.gskill.com/en/product/f3-12800cl9d-8gbxl) |
+| Mémoire         | [G.Skill Ripjaws X DDR3 16 Go](http://www.gskill.com/en/product/f3-12800cl9d-8gbxl) |
 | SSD             | [Crucial BX100 500 Go](http://www.crucial.fr/fra/fr/macbook-pro-(13-pouces,-d%C3%A9but-2011)/CT6512438) |
 | HDD             | [WD Caviar Black S-ATA 3 1 To](https://www.wdc.com/fr-fr/products/internal-storage/wd-black-desktop.html#WD1003FZEX) |
 | Écran           | [iiyama Prolite B2206WS 22"](http://iiyama.com/fr_fr/produits/prolite-b2206ws-1/) |
