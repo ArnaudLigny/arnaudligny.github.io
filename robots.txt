@@ -1,1 +1,2 @@
 User-agent: *
+Sitemap: http://narno.org/sitemap.xml

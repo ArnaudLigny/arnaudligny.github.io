@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>narno.org</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+        <lastBuildDate>2017-03-18CET02:17:10+01:00</lastBuildDate>
+        <link>http://narno.org/</link>
+            <item>
+                <title>Projects</title>
+                <description>My contribution to open source projects.</description>
+                <pubDate>2017-03-18CET02:16:50+01:00</pubDate>
+                <link>http://narno.org/projects/</link>
+            </item>
+            <item>
+                <title>Home</title>
+                <description></description>
+                <pubDate>2017-03-18CET02:17:10+01:00</pubDate>
+                <link>http://narno.org/</link>
+            </item>
+    </channel>
+</rss>
