@@ -31,7 +31,7 @@
         </nav>
       </div><!-- header -->
 {% block header %}
-      <p class="lead">Hello, I'm <a href="{{ site.author.url }}">{{ site.author.name }}</a> aka <a href="http://narno.com">Narno</a>. {{ site.baseline }}</p>
+      <p class="lead">Hello, I'm Arnaud aka <a href="http://narno.com">Narno</a>. {{ site.baseline }}</p>
 {% endblock header %}
       <!-- content -->
 {% block content %}
@@ -39,8 +39,7 @@
       <footer class="footer">
 {% block footer %}
         <p>
-          &copy; Copyright {{ "now"|date('Y') }} <a href="{{ site.author.url }}">{{ site.author.name }}</a>
-           | Powered by <a href="{{ phpoole.url }}">PHPoole</a>
+          Powered by <a href="{{ phpoole.url }}">PHPoole</a>
           {% if not page.isVirtual %} | See <a href="https://github.com/Narno/narno.github.com/tree/source/content">page source</a>{% endif %}
         </p>
 {% endblock footer %}
