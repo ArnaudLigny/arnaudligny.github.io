@@ -3,18 +3,18 @@
     <channel>
         <title>narno.org</title>
         <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
-        <lastBuildDate>2017-03-18CET02:17:10+01:00</lastBuildDate>
+        <lastBuildDate>2017-07-13CEST23:49:56+02:00</lastBuildDate>
         <link>http://narno.org/</link>
             <item>
                 <title>Projects</title>
                 <description>My contribution to open source projects.</description>
-                <pubDate>2017-03-18CET02:16:50+01:00</pubDate>
+                <pubDate>2017-07-13CEST23:49:36+02:00</pubDate>
                 <link>http://narno.org/projects/</link>
             </item>
             <item>
                 <title>Home</title>
                 <description></description>
-                <pubDate>2017-03-18CET02:17:10+01:00</pubDate>
+                <pubDate>2017-07-13CEST23:49:56+02:00</pubDate>
                 <link>http://narno.org/</link>
             </item>
     </channel>
