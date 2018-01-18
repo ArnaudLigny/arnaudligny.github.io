@@ -1,9 +1,7 @@
 ---
 title: Projects
-menu:
-    main:
-        weight: 10
 layout: projects.html
+menu:
+  main:
+    weight: 10
 ---
-
-My contribution to open source projects.

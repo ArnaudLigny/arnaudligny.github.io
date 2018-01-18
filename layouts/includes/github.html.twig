@@ -1,6 +1,6 @@
 {% macro widget(type, name, id, title, description) %}
-<div class="panel panel-default" id="{{ id }}">
-  <div class="panel-heading">{{ title }}</div>
+<div class="panel" id="{{ id }}">
+  <div class="panel-heading"><h2>{{ title }}</h2></div>
   <div class="panel-body">
     <p>{{ description }}</p>
     <dl>
@@ -13,14 +13,16 @@
 {% filter minifyJS %}
   (function($) {
     $(function() {
-      $.getJSON("https://api.github.com/{{ type }}/{{ name }}/repos?sort=pushed&callback=?", function(response, status) {
+      $.getJSON("https://api.github.com/{{ type }}/{{ name }}/repos?visibility=public@type=owner&sort=pushed&callback=?", function(response, status) {
         if (status != 'success' || response.meta.status != 200) {
-          $("div#{{ id }}").html("Oh no, I can't fetch the GitHub API!");
+          console.log(response.data.message);
+          $("div#{{ id }} dl dt").html("Oh no, I can't fetch the GitHub API!");
           return;
         }
         $("div#{{ id }} dl dt").remove();
         $("div#{{ id }} dl dd").remove();
         $.each(response.data, function(idx, repo) {
+if(!repo.archived) {
           $("div#{{ id }} dl").attr("class", "dl-horizontal").append(
             $("<dt>").append(
               $("<a>")
@@ -43,6 +45,7 @@
               .html(repo.description)
             )
           );
+}
         });
       });
     });

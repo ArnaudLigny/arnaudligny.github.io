@@ -4,61 +4,43 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.baseline }}">
+    <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author.name }}">
     <link rel="shortcut icon" href="{{ url('images/favicon.ico') }}" type="image/x-icon">
     <link rel="icon" type="image/png" href="{{ url('images/favicon.png') }}">
     <title>{% if page.name %} {{ page.title }} | {% endif %} {{ site.title }}</title>
-    <link href="{{ url('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url(minify('css/ie10-viewport-bug-workaround.css')) }}" rel="stylesheet">
-    <link href="{{ url(minify('css/narno.css')) }}" rel="stylesheet">
-    <script src="{{ url('js/jquery.min.js') }}"></script>
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="{{ url('js/jquery-3.2.1.min.js') }}"></script>
   </head>
   <body>
     <div class="container">
       <div class="header clearfix">
-        <h1 class="text-muted">{% if page.name %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</h1>
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            {% for item in site.menus.main|sortByWeight %}
-              <li role="presentation"{% if item.name == page.title %} class="active"{% endif %}><a href="{{ url(item.url) }}">{{ item.name }}</a></li>
-            {% endfor %}
-          </ul>
+        <h1 class="text-muted">{{ site.title }}</h1>
+        <nav class="nav">
+{% for item in site.menus.main|sortByWeight %}
+          <a class="nav-link{% if item.name == page.title %} active{% endif %}" href="{{ url(item.url) }}">{{ item.name }}</a>
+{% endfor %}
         </nav>
+        <hr/>
       </div><!-- header -->
-{% block header %}
-      <p class="lead">Hello, I'm Arnaud aka <a href="http://narno.com">Narno</a>. {{ site.baseline }}</p>
-{% endblock header %}
+
+{% block subheader %}
+      <p class="lead">
+        Hello, I'm Arnaud aka <a href="http://narno.com">Narno</a>. {{ site.description }}
+        <a class="btn btn-outline-primary btn-sm btn-block" href="{{ url('projects') }}" role="button">View my projects</a>
+      </p>
+{% endblock subheader %}
       <!-- content -->
 {% block content %}
 {% endblock content %}
-      <footer class="footer">
+      <footer>
 {% block footer %}
-        <p>
-          Powered by <a href="{{ phpoole.url }}">PHPoole</a>
-          {% if not page.isVirtual %} | See <a href="https://github.com/Narno/narno.github.com/tree/source/content">page source</a>{% endif %}
-        </p>
+        <p>Powered by <a href="https://getbootstrap.com/">Bootstrap</a> &amp; <a href="{{ url(phpoole.url) }}">PHPoole</a></p>
 {% endblock footer %}
       </footer>
     </div><!-- /container -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="{{ url('js/bootstrap.min.js') }}"></script>
-    <script src="{{ url(minify('js/ie10-viewport-bug-workaround.js')) }}"></script>
-    <script type="text/javascript">
-{% filter minifyJS %}
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-387892-18']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-{% endfilter %}
-    </script>
+    <link href="{{ url('css/bootstrap-4.0.0-beta.3.min.css') }}" rel="stylesheet">
+    <link href="{{ url(minify('css/narno.css')) }}" rel="stylesheet">
+    <script src="{{ url('js/bootstrap-4.0.0-beta.3.min.js') }}"></script>
+    {% include 'includes/googleanalytics.js.twig' %}
   </body>
 </html>

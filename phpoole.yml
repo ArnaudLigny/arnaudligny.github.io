@@ -1,23 +1,25 @@
 site:
   title: narno.org
   baseurl: http://narno.org/
-  baseline: I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.
+  baseline: Open Source Developer.
+  description: I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.
   author:
     name: Arnaud Ligny
-    url: http://arnaudligny.fr
+    url: https://arnaudligny.fr
+  googleanalytics: 387892-18
   projects:
     - name: narno
       type: users
       id: github-narno
       title: My open source projects
       description: A few ones of the open source projects on which I works during my free time, hosted on GitHub.
-    - name: aperturelab
-      type: orgs
-      id: github-aperturelab
-      title: Aperture Lab projects
-      description: Open source projects of <a href="http://aperturelab.io">Aperture Lab</a>.
     - name: phpoole
       type: orgs
       id: github-phpoole
       title: The PHPoole project
       description: <a href="http://phpoole.org">PHPoole</a> is a static website generator.
+    - name: aperturelab
+      type: orgs
+      id: github-aperturelab
+      title: Aperture Lab projects
+      description: Open source projects of <a href="http://aperturelab.io">Aperture Lab</a>.
