@@ -26,6 +26,8 @@
 {% block subheader %}
       <p class="lead">
         Hello, I'm Arnaud aka <a href="http://narno.com">Narno</a>. {{ site.description }}
+      </p>
+      <p>
         <a class="btn btn-outline-primary btn-sm btn-block" href="{{ url('projects') }}" role="button">View my projects</a>
       </p>
 {% endblock subheader %}
@@ -38,9 +40,9 @@
 {% endblock footer %}
       </footer>
     </div><!-- /container -->
-    <link href="{{ url('css/bootstrap-4.0.0-beta.3.min.css') }}" rel="stylesheet">
+    <link href="{{ url('css/bootstrap-4.0.0.min.css') }}" rel="stylesheet">
     <link href="{{ url(minify('css/narno.css')) }}" rel="stylesheet">
-    <script src="{{ url('js/bootstrap-4.0.0-beta.3.min.js') }}"></script>
+    <script src="{{ url('js/bootstrap-4.0.0.min.js') }}"></script>
     {% include 'includes/googleanalytics.js.twig' %}
   </body>
 </html>
