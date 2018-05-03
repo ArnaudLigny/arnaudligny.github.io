@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /404.html
 Allow: /
-Sitemap: https://narno.org/sitemap.xml?6dd3d45afe86613723dc080dbe292b50
+Sitemap: https://narno.org/sitemap.xml?a335734caa14763597e40aa54a11a54f
