@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://narno.org/</loc>
-        <lastmod>2018-01-22</lastmod>
+        <loc>https://narno.org/</loc>
+        <lastmod>2018-05-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://narno.org/projects/</loc>
-        <lastmod>2018-01-22</lastmod>
+        <loc>https://narno.org/projects/</loc>
+        <lastmod>2018-05-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
