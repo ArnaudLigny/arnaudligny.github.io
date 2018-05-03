@@ -1,6 +1,6 @@
 site:
   title: narno.org
-  baseurl: http://narno.org/
+  baseurl: https://narno.org/
   baseline: Open Source Developer.
   description: I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.
   author:
