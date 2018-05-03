@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REPO="Narno/narno.github.com"
+REPO="Narno/narno.github.io"
 SOURCE_BRANCH="source"
 TARGET_BRANCH="master"
 SITE_DIR="_site"
