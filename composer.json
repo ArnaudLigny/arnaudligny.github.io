@@ -1,6 +1,8 @@
 {
   "require": {
-    "phpoole/library": "^2.0",
-    "symfony/yaml": "^4.0"
-  }
+    "phpoole/library": "^2.3",
+    "symfony/yaml": "^4.1"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
