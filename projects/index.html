@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.">
     <meta name="author" content="Arnaud Ligny">
-    <link rel="shortcut icon" href="https://narno.org/images/favicon.ico?45c90b0b858cdbe0b7a42c344b6521f7" type="image/x-icon">
-    <link rel="icon" type="image/png" href="https://narno.org/images/favicon.png?45c90b0b858cdbe0b7a42c344b6521f7">
+    <link rel="shortcut icon" href="https://narno.org/images/favicon.ico?39aa6218529a0d71245f05d2e8934994" type="image/x-icon">
+    <link rel="icon" type="image/png" href="https://narno.org/images/favicon.png?39aa6218529a0d71245f05d2e8934994">
     <title> Projects |  narno.org</title>
-    <script src="https://narno.org/js/jquery-3.2.1.min.js?45c90b0b858cdbe0b7a42c344b6521f7"></script>
+    <script src="https://narno.org/js/jquery-3.2.1.min.js?39aa6218529a0d71245f05d2e8934994"></script>
   </head>
   <body>
     <div class="container">
@@ -37,7 +37,7 @@
 </div>
 <script>
 (function($){$(function(){$.getJSON("https://api.github.com/users/narno/repos?visibility=public@type=owner&sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){console.log(response.data.message);$("div#github-narno dl dt").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-narno dl dt").remove();$("div#github-narno dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-narno dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return "link-fork"}else{return "link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
+$("div#github-narno dl dt").remove();$("div#github-narno dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-narno dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return"link-fork"}else{return"link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
 
 <div class="panel" id="github-phpoole">
   <div class="panel-heading"><h2>The PHPoole project</h2></div>
@@ -51,7 +51,7 @@ $("div#github-narno dl dt").remove();$("div#github-narno dl dd").remove();$.each
 </div>
 <script>
 (function($){$(function(){$.getJSON("https://api.github.com/orgs/phpoole/repos?visibility=public@type=owner&sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){console.log(response.data.message);$("div#github-phpoole dl dt").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-phpoole dl dt").remove();$("div#github-phpoole dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-phpoole dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return "link-fork"}else{return "link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
+$("div#github-phpoole dl dt").remove();$("div#github-phpoole dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-phpoole dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return"link-fork"}else{return"link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
 
 <div class="panel" id="github-aperturelab">
   <div class="panel-heading"><h2>Aperture Lab projects</h2></div>
@@ -65,15 +65,16 @@ $("div#github-phpoole dl dt").remove();$("div#github-phpoole dl dd").remove();$.
 </div>
 <script>
 (function($){$(function(){$.getJSON("https://api.github.com/orgs/aperturelab/repos?visibility=public@type=owner&sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){console.log(response.data.message);$("div#github-aperturelab dl dt").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-aperturelab dl dt").remove();$("div#github-aperturelab dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-aperturelab dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return "link-fork"}else{return "link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
+$("div#github-aperturelab dl dt").remove();$("div#github-aperturelab dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-aperturelab dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return"link-fork"}else{return"link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
 
       <footer>
-        <p>Powered by <a href="https://getbootstrap.com/">Bootstrap</a> &amp; <a href="https://phpoole.org/#v1.1.x-dev">PHPoole</a></p>
+        <p>Powered by <a href="https://getbootstrap.com/">Bootstrap</a> &amp; <a href="https://phpoole.org/#2.3.6
+">PHPoole</a></p>
       </footer>
     </div><!-- /container -->
-    <link href="https://narno.org/css/bootstrap-4.0.0.min.css?45c90b0b858cdbe0b7a42c344b6521f7" rel="stylesheet">
-    <link href="https://narno.org/css/narno.css?45c90b0b858cdbe0b7a42c344b6521f7" rel="stylesheet">
-    <script src="https://narno.org/js/bootstrap-4.0.0.min.js?45c90b0b858cdbe0b7a42c344b6521f7"></script>
+    <link href="https://narno.org/css/bootstrap-4.0.0.min.css?39aa6218529a0d71245f05d2e8934994" rel="stylesheet">
+    <link href="https://narno.org/css/narno.css?39aa6218529a0d71245f05d2e8934994" rel="stylesheet">
+    <script src="https://narno.org/js/bootstrap-4.0.0.min.js?39aa6218529a0d71245f05d2e8934994"></script>
     <!-- Google Analytics -->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
