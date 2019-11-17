@@ -1,0 +1,24 @@
+title: narno.org
+baseurl: https://narno.org/
+baseline: "Open Source Developer."
+description: "I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist."
+author:
+  name: "Arnaud Ligny"
+  url: https://arnaudligny.fr
+googleanalytics: 387892-18
+projects:
+  - name: narno
+    type: users
+    id: github-narno
+    title: "My open source projects"
+    description: "A few ones of the open source projects on which I works during my free time, hosted on GitHub."
+  - name: cecil
+    type: orgs
+    id: github-cecil
+    title: "Cecil"
+    description: "<a href="https://cecil.app">Cecil</a> is a static site generator."
+  - name: aperturelab
+    type: orgs
+    id: github-aperturelab
+    title: "Aperture Lab projects"
+    description: "Open source projects of <a href="http://aperturelab.io">Aperture Lab</a>."

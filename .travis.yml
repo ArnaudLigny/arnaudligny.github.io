@@ -1,18 +1,24 @@
 language: php
 php:
-  - 7.1
+  - 7.2
 sudo: false
 branches:
   only:
     - source
-cache:
-  directories:
-    - vendor
-    - $COMPOSER_CACHE_DIR
-before_script:
-  - phpenv config-rm xdebug.ini
-  - composer install --no-interaction
+# Download Cecil and theme(s)
+install:
+  - curl -SOL https://cecil.app/cecil.phar && php cecil.phar -v
+  - composer install
+# Run Cecil build
 script:
-  - php build.php -e=prod
-after_success:
-  - bash deploy.sh
+  - php cecil.phar build -v
+# Deploy to GitHub Pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN # set this env. variable in Travis CI settings
+  local_dir: _site
+  keep_history: true
+  target_branch: master
+  on:
+    branch: source
