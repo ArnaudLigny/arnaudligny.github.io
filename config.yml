@@ -16,7 +16,7 @@ projects:
     type: orgs
     id: github-cecil
     title: "Cecil"
-    description: "<a href="https://cecil.app">Cecil</a> is a static site generator."
+    description: "<a href=\"https://cecil.app\">Cecil</a> is a static site generator."
   - name: aperturelab
     type: orgs
     id: github-aperturelab
