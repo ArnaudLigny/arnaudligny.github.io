@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://narno.org/</id>
+  <title>narno.org</title>
+  <subtitle><![CDATA[I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.]]></subtitle>
+  <link href="https://narno.org/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://narno.org/" rel="alternate" type="text/html" />
+  <updated>2019-11-18T00:59:11+01:00</updated>
+  <author>
+    <name>Arnaud Ligny</name>
+    <uri>https://arnaudligny.fr</uri>
+  </author>
+    <entry xml:lang="en">
+      <id>https://narno.org/projects/</id>
+      <title>Projects</title>
+      <content type="html">
+        <![CDATA[]]>
+      </content>
+      <link href="https://narno.org/projects/" rel="alternate" type="text/html" />
+      <published>2019-11-18T00:59:11+01:00</published>
+      <updated>2019-11-18T00:59:11+01:00</updated>
+    </entry>
+</feed>

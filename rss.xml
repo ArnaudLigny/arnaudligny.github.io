@@ -1,9 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
-    <channel>
-        <title>narno.org</title>
-        <description><![CDATA[I&#039;m a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.]]></description>
-        <lastBuildDate>2018-08-27CEST00:50:59+02:00</lastBuildDate>
-        <link>https://narno.org/</link>
-            </channel>
+  <channel>
+    <title>narno.org</title>
+    <description><![CDATA[I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.]]></description>
+    <lastBuildDate>2019-11-18T00:59:11+01:00</lastBuildDate>
+    <link>https://narno.org/</link>
+    <item>
+      <guid>https://narno.org/projects/</guid>
+      <title>Projects</title>
+      <description><![CDATA[]]></description>
+      <pubDate>2019-11-18T00:59:11+01:00</pubDate>
+      <link>https://narno.org/projects/</link>
+    </item>
+  </channel>
 </rss>

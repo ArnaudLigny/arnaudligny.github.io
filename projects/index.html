@@ -1,88 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="PHPoole" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I'm a french technical consultant and an open source Web developer, father of a boy, in love, geek, gamer, agnostic and humanist.">
     <meta name="author" content="Arnaud Ligny">
-    <link rel="shortcut icon" href="https://narno.org/images/favicon.ico?1248aed31bcf7d4597ad51087a2707d9" type="image/x-icon">
-    <link rel="icon" type="image/png" href="https://narno.org/images/favicon.png?1248aed31bcf7d4597ad51087a2707d9">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <title> Projects |  narno.org</title>
-    <script src="https://narno.org/js/jquery-3.2.1.min.js?1248aed31bcf7d4597ad51087a2707d9"></script>
-  </head>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+  	<meta name="generator" content="Cecil" />
+</head>
   <body>
     <div class="container">
       <div class="header clearfix">
         <h1 class="text-muted">narno.org</h1>
         <nav class="nav">
-          <a class="nav-link" href="https://narno.org/">Home</a>
-          <a class="nav-link active" href="https://narno.org/projects/">Projects</a>
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link active" href="/projects/">Projects</a>
         </nav>
         <hr/>
       </div><!-- header -->
 
       <!-- content -->
 
-<div class="panel" id="github-narno">
-  <div class="panel-heading"><h2>My open source projects</h2></div>
-  <div class="panel-body">
-    <p>A few ones of the open source projects on which I works during my free time, hosted on GitHub.</p>
-    <dl>
-      <dt>Loading</dt>
-      <dd>...</dd>
-    </dl>
-  </div>
-</div>
 <script>
-(function($){$(function(){$.getJSON("https://api.github.com/users/narno/repos?visibility=public@type=owner&sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){console.log(response.data.message);$("div#github-narno dl dt").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-narno dl dt").remove();$("div#github-narno dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-narno dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return"link-fork"}else{return"link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
-
-<div class="panel" id="github-phpoole">
-  <div class="panel-heading"><h2>The PHPoole project</h2></div>
-  <div class="panel-body">
-    <p><a href="http://phpoole.org">PHPoole</a> is a static website generator.</p>
-    <dl>
-      <dt>Loading</dt>
-      <dd>...</dd>
-    </dl>
-  </div>
-</div>
-<script>
-(function($){$(function(){$.getJSON("https://api.github.com/orgs/phpoole/repos?visibility=public@type=owner&sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){console.log(response.data.message);$("div#github-phpoole dl dt").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-phpoole dl dt").remove();$("div#github-phpoole dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-phpoole dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return"link-fork"}else{return"link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
-
-<div class="panel" id="github-aperturelab">
-  <div class="panel-heading"><h2>Aperture Lab projects</h2></div>
-  <div class="panel-body">
-    <p>Open source projects of <a href="http://aperturelab.io">Aperture Lab</a>.</p>
-    <dl>
-      <dt>Loading</dt>
-      <dd>...</dd>
-    </dl>
-  </div>
-</div>
-<script>
-(function($){$(function(){$.getJSON("https://api.github.com/orgs/aperturelab/repos?visibility=public@type=owner&sort=pushed&callback=?",function(response,status){if(status!='success'||response.meta.status!=200){console.log(response.data.message);$("div#github-aperturelab dl dt").html("Oh no, I can't fetch the GitHub API!");return}
-$("div#github-aperturelab dl dt").remove();$("div#github-aperturelab dl dd").remove();$.each(response.data,function(idx,repo){if(!repo.archived){$("div#github-aperturelab dl").attr("class","dl-horizontal").append($("<dt>").append($("<a>").attr("href",repo.html_url).attr("class",function(i,val){if(repo.fork){return"link-fork"}else{return"link-github"}}).append($("<span>").html(repo.name)))).append($("<dd>").append($("<span>").html(repo.description)))}})})})})(jQuery)</script>
-
+  $(document).ready(function () {
+    $("table").addClass("table table-striped table-condensed");
+  });
+</script>
       <footer>
-        <p>Powered by <a href="https://getbootstrap.com/">Bootstrap</a> &amp; <a href="https://phpoole.org/#2.3.6
-">PHPoole</a></p>
+        <p>Powered by <a href="https://getbootstrap.com/">Bootstrap</a> &amp; <a href="https://cecil.app/#4.21.2">Cecil</a></p>
       </footer>
     </div><!-- /container -->
-    <link href="https://narno.org/css/bootstrap-4.0.0.min.css?1248aed31bcf7d4597ad51087a2707d9" rel="stylesheet">
-    <link href="https://narno.org/css/narno.css?1248aed31bcf7d4597ad51087a2707d9" rel="stylesheet">
-    <script src="https://narno.org/js/bootstrap-4.0.0.min.js?1248aed31bcf7d4597ad51087a2707d9"></script>
-    <!-- Google Analytics -->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    <link href="/css/bootstrap-4.0.0.min.css" rel="stylesheet">
+    <link href="/css/narno.css" rel="stylesheet">
+    <script src="/js/bootstrap-4.0.0.min.js"></script>
+        <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-387892-18', 'auto');
-    ga('send', 'pageview');
-</script>
+      ga('create', '387892-18', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
