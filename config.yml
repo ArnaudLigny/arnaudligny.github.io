@@ -21,4 +21,4 @@ projects:
     type: orgs
     id: github-aperturelab
     title: "Aperture Lab projects"
-    description: "Open source projects of <a href="http://aperturelab.io">Aperture Lab</a>."
+    description: "Open source projects of <a href=\"http://aperturelab.io\">Aperture Lab</a>."
