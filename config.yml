@@ -12,7 +12,7 @@ projects:
     id: github-narno
     title: "My open source projects"
     description: "A few ones of the open source projects on which I works during my free time, hosted on GitHub."
-  - name: cecil
+  - name: cecilapp
     type: orgs
     id: github-cecil
     title: "Cecil"
