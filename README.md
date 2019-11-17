@@ -4,15 +4,8 @@ The website is automatically built and deployed through [Travis CI](https://trav
 
 [![Build Status](https://travis-ci.org/Narno/narno.github.io.svg?branch=source)](https://travis-ci.org/Narno/narno.github.io)
 
-## Install, build & deploy
+## Install, build & serve
 ```
-composer install
-php build.php -e=prod
-export GH_TOKEN=your_github_token
-sh deploy.sh
-```
-
-## Test locally
-```
-php build.php -e=dev
+curl -SOL https://cecil.app/cecil.phar
+php cecil.phar build serve
 ```
